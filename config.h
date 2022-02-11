@@ -68,10 +68,12 @@ static const struct arg args[] = {
 	/* make scripts executable and put the min /usr/local/bin folder */
 	/* pkgs.sh causes CPU to be at 20% */
 //    {run_command, "%s |", "songplaying.sh" }, 
-    {run_command, "%s |", "pkgs2.sh" }, 
-	{run_command, "%s |", "upgrades2.sh"},
-	{run_command, "%s |", "weatherbar2.sh" },
-	{run_command, "%s |", "battery.sh" }, 
+//    {run_command, "%s |", "pkgs2.sh" }, 
+//	{run_command, "%s |", "upgrades2.sh"},
+
+//	{run_command, "%s |", "weatherbar2.sh" },
+
+//	{run_command, "%s |", "battery.sh" }, 
 /*	{netspeed_rx, "%sB/s D | ", "enp0s25"},
 	{netspeed_tx, "%sB/s ^ | ", "enp0s25"}, */
 // wireless ones don't work for some reason 
@@ -84,7 +86,7 @@ static const struct arg args[] = {
 //	{run_command, "%s |", "diskspace.sh"},
 	{run_command, "%s|", "volume.sh"},
     {run_command, "%s|", "network.sh"},
-	{ datetime, "%s",           " %Y %b %d (%a) %H:%M |" },
+	{ datetime, "%s",           " %d-%m-%Y (%a) %H:%M |"},
     
 	
 };
